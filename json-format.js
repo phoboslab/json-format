@@ -51,10 +51,9 @@
 		// Strip whitespace from numeric arrays and put backslashes 
 		// and strings back in
 		out = out
-			.replace( /\[[\d,\s]+?\]/g, function(m){ return m.replace(/\s/g,''); } );
-		while (out.search(/\\\d+\\/) > -1) {
-			out = out.replace( /\\(\d+)\\/g, pop );
-		}
+			.replace( /\[[\d,\s]+?\]/g, function(m){ return m.replace(/\s/g,''); } )
+			.replace( /\\(\d+)\\/g, pop ) // strings
+			.replace( /\\(\d+)\\/g, pop ); // backslashes in strings
 		
 		return out;
 	};
