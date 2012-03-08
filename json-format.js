@@ -8,8 +8,8 @@
 
 (function(window) {
 	var p = [],
-		push = function( m ) { return '\\' + p.push( m ) + '\\'; };
-		pop = function( m, i ) { return p[i-1] };
+		push = function( m ) { return '\\' + p.push( m ) + '\\'; },
+		pop = function( m, i ) { return p[i-1] },
 		tabs = function( count ) { return new Array( count + 1 ).join( '\t' ); };
 
 	window.JSONFormat = function( json ) {
