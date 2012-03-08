@@ -1,5 +1,5 @@
 /*
-	json-format v.1.0
+	json-format v.1.1
 	http://github.com/phoboslab/json-format
 
 	Released under MIT license:
